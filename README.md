@@ -21,7 +21,8 @@ It will monitor a facebook feed at a regular interval and outut the posts as eve
 5. Configure the plugin
 
 
-   `input {
+    ```
+    input {
       facebook {
         oauth_token => "[OAuth token to monitor the page, can be copied from the facebook api explorer]"
         facebook_id => "[Id of the facebook page to monitor]"
@@ -44,4 +45,5 @@ It will monitor a facebook feed at a regular interval and outut the posts as eve
         document_type => "posting"
         document_id => "%{[@metadata][_id]}"
       }
-   }`
+   }
+   ```
